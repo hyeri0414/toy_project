@@ -3,7 +3,7 @@ import requests
 
 def Get_Location(keyword: str)-> tuple:
     url = 'https://dapi.kakao.com/v2/local/search/keyword.json?query={}'.format(keyword)
-    headers = {"Authorization": "KakaoAK 8a17c4c710d86b2c7e6704d7411b2ff4"}
+    headers = {"Authorization": ""}
 
     response = requests.get(url, headers = headers)
 

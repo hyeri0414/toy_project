@@ -2,7 +2,7 @@ import requests
 
 def Get_Companylist()-> list:
     url: str = 'http://info.sweettracker.co.kr/api/v1/companylist'
-    params: dict = {'t_key':'MUwk2l0qX3mP47ZeL2lNUA'}
+    params: dict = {'t_key':''}
     response = requests.get(url, params=params)
 
     if response.status_code == 200:

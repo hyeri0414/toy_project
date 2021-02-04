@@ -3,7 +3,7 @@ import requests
 
 def Get_Trackinginfo(t_invoice: str, t_code: str)-> list:
     url: str = 'http://info.sweettracker.co.kr/api/v1/trackingInfo'
-    params: dict = {'t_key':'MUwk2l0qX3mP47ZeL2lNUA'}
+    params: dict = {'t_key':''}
     params['t_invoice'] = t_invoice
     
     company_list = Get_Companylist()
